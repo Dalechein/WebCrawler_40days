@@ -1,0 +1,114 @@
+2021-02-28 00:57:18 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: Day028)
+2021-02-28 00:57:18 [scrapy.utils.log] INFO: Versions: lxml 4.6.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.9 (default, Aug 31 2020, 17:10:11) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1i  8 Dec 2020), cryptography 3.3.1, Platform Windows-10-10.0.19041-SP0
+2021-02-28 00:57:18 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-02-28 00:57:18 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Day028',
+ 'LOG_FILE': './output/ptt.log',
+ 'NEWSPIDER_MODULE': 'Day028.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['Day028.spiders']}
+2021-02-28 00:57:18 [scrapy.extensions.telnet] INFO: Telnet Password: b78e75da8a046825
+2021-02-28 00:57:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-02-28 00:57:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-02-28 00:57:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-02-28 00:57:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['Day028.pipelines.Day028Pipeline']
+2021-02-28 00:57:18 [scrapy.core.engine] INFO: Spider opened
+2021-02-28 00:57:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-02-28 00:57:18 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-02-28 00:57:19 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.ptt.cc/robots.txt> (referer: None)
+2021-02-28 00:57:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/man/fastfood/DDD7/D898/M.1519294672.A.53F.html> (referer: None)
+2021-02-28 00:57:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ptt.cc/man/fastfood/DDD7/D898/M.1519294672.A.53F.html>
+{'article_author': 'popomom (popomom)',
+ 'article_content': '\n'
+                    '\n'
+                    '地址:京華城B3美食街\n'
+                    '\n'
+                    '\n'
+                    '自從之前吃了這間德州炸雞後就一直念念不忘， 因為跟我記憶中的德州炸雞好像阿\n'
+                    '\n'
+                    '寒假時特別帶沒吃過”德州炸雞”的阿姐去吃\n'
+                    '\n'
+                    '圖文版\n'
+                    'http://tw.myblog.yahoo.com/good_21520/article?mid=1235#1237\n'
+                    '\n'
+                    '三塊雞特餐$176:\n'
+                    '\n'
+                    '三塊炸雞+飲料+薯條\n'
+                    '\n'
+                    '炸雞現炸等了十五分鐘\n'
+                    '\n'
+                    '\n'
+                    '我是吃我最愛的雞大腿 ，鮮嫩又多汁， 但是真的好油\n'
+                    '\n'
+                    '雞皮邊咖滋咖滋響~一邊滴油～\n'
+                    '\n'
+                    '波浪薯條:\n'
+                    '\n'
+                    '好小一份 ，因為炸起來有一段時間了~所以軟掉了， 失敗～\n'
+                    '\n'
+                    '那天的紅茶跟有一點澀(跟小紅番的很像)~我很喜歡\n'
+                    '\n'
+                    '心得:\n'
+                    '\n'
+                    '阿姐說有點遜， 叫我以後不要帶她來吃雷 ，他比較愛"麥噹噹"啦～\n'
+                    '\n'
+                    '但我還是覺得炸雞很好吃阿~太貴倒是真的。\n'
+                    '\n'
+                    '\n'
+                    '--\n'
+                    'http://tw.myblog.yahoo.com/good_21520\n'
+                    '\n'
+                    '一些吃的',
+ 'article_date': 'Mon Feb 26 19:18:52 2007',
+ 'article_id': 'M.1519294672.A.53F',
+ 'article_title': '[食記] 京華城B3美食街---德州炸雞 ',
+ 'ip': '61.230.78.247',
+ 'message_count': 2,
+ 'messages': '這又讓我想起小紅番  T.T.. 我好想你阿######我上次也有去吃  紅茶真的跟小紅番有像!!',
+ 'url': 'https://www.ptt.cc/man/fastfood/DDD7/D898/M.1519294672.A.53F.html'}
+2021-02-28 00:57:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-02-28 00:57:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 711,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 3799,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 0.803189,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 2, 27, 16, 57, 19, 602599),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 10,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 2, 27, 16, 57, 18, 799410)}
+2021-02-28 00:57:19 [scrapy.core.engine] INFO: Spider closed (finished)
