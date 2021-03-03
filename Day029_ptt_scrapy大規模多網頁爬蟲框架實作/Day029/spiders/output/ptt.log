@@ -1,18 +1,23 @@
-2021-03-03 22:23:20 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: Day029)
-2021-03-03 22:23:20 [scrapy.utils.log] INFO: Versions: lxml 4.6.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.9 (default, Aug 31 2020, 17:10:11) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1i  8 Dec 2020), cryptography 3.3.1, Platform Windows-10-10.0.19041-SP0
-2021-03-03 22:23:20 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
-2021-03-03 22:23:20 [scrapy.crawler] INFO: Overridden settings:
+2021-03-03 22:41:34 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: Day029)
+2021-03-03 22:41:34 [scrapy.utils.log] INFO: Versions: lxml 4.6.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.9 (default, Aug 31 2020, 17:10:11) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1i  8 Dec 2020), cryptography 3.3.1, Platform Windows-10-10.0.19041-SP0
+2021-03-03 22:41:34 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-03-03 22:41:34 [scrapy.crawler] INFO: Overridden settings:
 {'BOT_NAME': 'Day029',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
  'LOG_FILE': './output/ptt.log',
  'NEWSPIDER_MODULE': 'Day029.spiders',
  'ROBOTSTXT_OBEY': True,
  'SPIDER_MODULES': ['Day029.spiders']}
-2021-03-03 22:23:20 [scrapy.extensions.telnet] INFO: Telnet Password: 95e20f999ee876b0
-2021-03-03 22:23:20 [scrapy.middleware] INFO: Enabled extensions:
+2021-03-03 22:41:34 [scrapy.extensions.telnet] INFO: Telnet Password: 997d07e8b7307736
+2021-03-03 22:41:34 [py.warnings] WARNING: c:\users\user\anaconda3\envs\crawler\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2021-03-03 22:41:34 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
  'scrapy.extensions.logstats.LogStats']
-2021-03-03 22:23:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2021-03-03 22:41:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
  'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
@@ -25,39 +30,39 @@
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2021-03-03 22:23:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+2021-03-03 22:41:34 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2021-03-03 22:23:21 [scrapy.middleware] INFO: Enabled item pipelines:
+2021-03-03 22:41:34 [scrapy.middleware] INFO: Enabled item pipelines:
 ['Day029.pipelines.Day029Pipeline']
-2021-03-03 22:23:21 [scrapy.core.engine] INFO: Spider opened
-2021-03-03 22:23:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2021-03-03 22:23:21 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
-2021-03-03 22:23:22 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.ptt.cc/robots.txt> (referer: None)
-2021-03-03 22:23:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/index.html> (referer: None)
-2021-03-03 22:23:22 [py.warnings] WARNING: C:\Users\User\Desktop\AI大數據\Jupyterlab\Day029\Day029\spiders\Pttcrawler.py:23: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+2021-03-03 22:41:34 [scrapy.core.engine] INFO: Spider opened
+2021-03-03 22:41:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-03-03 22:41:34 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-03-03 22:41:35 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.ptt.cc/robots.txt> (referer: None)
+2021-03-03 22:41:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/index.html> (referer: None)
+2021-03-03 22:41:35 [py.warnings] WARNING: C:\Users\User\Desktop\AI大數據\Jupyterlab\Day029\Day029\spiders\Pttcrawler.py:23: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
 
 The code that caused this warning is on line 23 of the file C:\Users\User\Desktop\AI大數據\Jupyterlab\Day029\Day029\spiders\Pttcrawler.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
 
   soup = BeautifulSoup(response.text)
 
-2021-03-03 22:23:22 [Pttcrawler] DEBUG: Parse article [情報] 新手向kaggle自辦競賽 ptt推噓文預測
-2021-03-03 22:23:22 [Pttcrawler] DEBUG: Parse article [問題] 新手openpose與深度學習問題
-2021-03-03 22:23:22 [Pttcrawler] DEBUG: Parse article Re: [討論] 分團問題!?
-2021-03-03 22:23:22 [Pttcrawler] DEBUG: Parse article [問題] spark 開發求書
-2021-03-03 22:23:22 [Pttcrawler] DEBUG: Parse article [問題] Tensorflow data pipeline 問題
-2021-03-03 22:23:22 [Pttcrawler] DEBUG: Reach the last article
-2021-03-03 22:23:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/M.1612527945.A.1FE.html> (referer: https://www.ptt.cc/bbs/DataScience/index.html)
-2021-03-03 22:23:23 [py.warnings] WARNING: C:\Users\User\Desktop\AI大數據\Jupyterlab\Day029\Day029\spiders\Pttcrawler.py:56: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+2021-03-03 22:41:35 [Pttcrawler] DEBUG: Parse article [情報] 新手向kaggle自辦競賽 ptt推噓文預測
+2021-03-03 22:41:35 [Pttcrawler] DEBUG: Parse article [問題] 新手openpose與深度學習問題
+2021-03-03 22:41:35 [Pttcrawler] DEBUG: Parse article Re: [討論] 分團問題!?
+2021-03-03 22:41:35 [Pttcrawler] DEBUG: Parse article [問題] spark 開發求書
+2021-03-03 22:41:35 [Pttcrawler] DEBUG: Parse article [問題] Tensorflow data pipeline 問題
+2021-03-03 22:41:35 [Pttcrawler] DEBUG: Reach the last article
+2021-03-03 22:41:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/M.1612527945.A.1FE.html> (referer: https://www.ptt.cc/bbs/DataScience/index.html)
+2021-03-03 22:41:36 [py.warnings] WARNING: C:\Users\User\Desktop\AI大數據\Jupyterlab\Day029\Day029\spiders\Pttcrawler.py:56: GuessedAtParserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
 
 The code that caused this warning is on line 56 of the file C:\Users\User\Desktop\AI大數據\Jupyterlab\Day029\Day029\spiders\Pttcrawler.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
 
   soup = BeautifulSoup(response.text)
 
-2021-03-03 22:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ptt.cc/bbs/DataScience/M.1612527945.A.1FE.html>
+2021-03-03 22:41:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ptt.cc/bbs/DataScience/M.1612527945.A.1FE.html>
 {'article_author': 'jack1218 (赤城我老婆)',
  'article_content': '\n'
                     '\n'
@@ -95,11 +100,137 @@ The code that caused this warning is on line 56 of the file C:\Users\User\Deskto
              '那種在棒球版是大師但在遊戲版是廢文王的情況=====分隔線===== '
              '也是很常見，所以使用者名稱搭配文章發表版面會是一組可能=====分隔線===== 不錯的特徵',
  'url': 'https://www.ptt.cc/bbs/DataScience/M.1612527945.A.1FE.html'}
-2021-03-03 22:23:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/M.1613621707.A.C0C.html> (referer: https://www.ptt.cc/bbs/DataScience/index.html)
-2021-03-03 22:23:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/M.1613300638.A.731.html> (referer: https://www.ptt.cc/bbs/DataScience/index.html)
-2021-03-03 22:23:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/M.1614079009.A.215.html> (referer: https://www.ptt.cc/bbs/DataScience/index.html)
-2021-03-03 22:23:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/M.1613921489.A.E25.html> (referer: https://www.ptt.cc/bbs/DataScience/index.html)
-2021-03-03 22:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ptt.cc/bbs/DataScience/M.1613621707.A.C0C.html>
+2021-03-03 22:41:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/M.1614079009.A.215.html> (referer: https://www.ptt.cc/bbs/DataScience/index.html)
+2021-03-03 22:41:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/M.1613921489.A.E25.html> (referer: https://www.ptt.cc/bbs/DataScience/index.html)
+2021-03-03 22:41:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/M.1613300638.A.731.html> (referer: https://www.ptt.cc/bbs/DataScience/index.html)
+2021-03-03 22:41:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.ptt.cc/bbs/DataScience/M.1613621707.A.C0C.html> (referer: https://www.ptt.cc/bbs/DataScience/index.html)
+2021-03-03 22:41:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ptt.cc/bbs/DataScience/M.1614079009.A.215.html>
+{'article_author': 'Sheepforpart (Sheep)',
+ 'article_content': '\n'
+                    '作業系統: Google colab/ Mac\n'
+                    '\n'
+                    '問題類別: DL\n'
+                    '\n'
+                    '使用工具: Tensorflow 2.x\n'
+                    '\n'
+                    '問題內容:\n'
+                    '\n'
+                    '想請教一個實作 Tensorflow data pipeline 的問題，我已經研究了好幾天\n'
+                    '但還是沒找到一個好方法\n'
+                    '\n'
+                    '模型的功能是預測一張圖片上哪些地方比較吸引人眼注意\n'
+                    '\n'
+                    '但麻煩的是原始資料全都是影片，而且除了影片外，我們還要加入聲音來訓練\n'
+                    '\n'
+                    '整體流程大約是這樣：\n'
+                    '\n'
+                    '1. 從影片中抽取幾張 frame\n'
+                    '2. 從影片中抽取對應的 audio, 並且做成 spectrogram\n'
+                    '3. 上一個步驟中的 audio 也保留 wave\n'
+                    '\n'
+                    '\n'
+                    '我目前查資料看起來 TFRecord 的功能好像很強，只是真的很複雜，不知道怎麼做到\n'
+                    '上面的那些轉換\n'
+                    '\n'
+                    '另外有一個不是很理想的方法是，先把需要的 frames 和 audio 都先抽好存起來\n'
+                    '如果是這個方法的話，我就只需要知道 Tensorflow 要如何同時餵進來自兩個來源\n'
+                    '的資料，這邊的重點可能是 shuffle 之後次序依然要維持對應\n'
+                    '\n'
+                    '這個方法不太理想是因為在實驗完之後，真正使用的資料集非常大，沒辦法先抽好\n'
+                    '\n'
+                    '麻煩大家給我一些建議了，謝謝',
+ 'article_date': 'Tue Feb 23 19:16:43 2021',
+ 'article_id': 'M.1614079009.A.215',
+ 'article_title': '[問題] Tensorflow data pipeline 問題',
+ 'ip': '109.57.194.138',
+ 'message_count': 4,
+ 'messages': ' 設定兩個Input layer, 再用concatenate layer=====分隔線===== '
+             '不熟TFRecord沒法給什麼建議，不過應該只要處理好=====分隔線===== '
+             '影片frame和audio的對應，spectrogram可以online從=====分隔線===== audio轉換而來',
+ 'url': 'https://www.ptt.cc/bbs/DataScience/M.1614079009.A.215.html'}
+2021-03-03 22:41:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ptt.cc/bbs/DataScience/M.1613921489.A.E25.html>
+{'article_author': 'loser113 (洨大魯蛇ㄍ)',
+ 'article_content': '\n'
+                    '作業系統:(ex:mac,win10,win8,win7,linux,etc...)\n'
+                    '\n'
+                    '問題類別:(ex：ML,SVM,RL,DL,RNN,CNN,NLP,BD,Vis,etc...)\n'
+                    '\n'
+                    '使用工具: spark kafka hbase\n'
+                    '\n'
+                    '問題內容:\n'
+                    '\n'
+                    '最近需要開發資料串流\n'
+                    '\n'
+                    '想求的 spark 相關書籍 最好有寫道 有關 kafka  串流方法\n'
+                    '\n'
+                    '除了歐萊禮 有沒有其他推薦 希望不要太舊版',
+ 'article_date': 'Sun Feb 21 23:31:27 2021',
+ 'article_id': 'M.1613921489.A.E25',
+ 'article_title': '[問題] spark 開發求書',
+ 'ip': '...',
+ 'message_count': 1,
+ 'messages': ' use flink',
+ 'url': 'https://www.ptt.cc/bbs/DataScience/M.1613921489.A.E25.html'}
+2021-03-03 22:41:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ptt.cc/bbs/DataScience/M.1613300638.A.731.html>
+{'article_author': 'kuku951 (猴子)',
+ 'article_content': '\n'
+                    '各位板上大大好\n'
+                    '\n'
+                    '小弟最近在思考一個問題\n'
+                    '\n'
+                    '廢話不多說直接來\n'
+                    '\n'
+                    '我要判斷投手投球的球種是什麼\n'
+                    '\n'
+                    '理應還說投出每種球種時\n'
+                    '\n'
+                    '人體的骨架Ex: 手臂出手的角度會不同\n'
+                    '\n'
+                    '然後\n'
+                    '\n'
+                    '如果資料集影片切割成圖片後用\n'
+                    '\n'
+                    'openpose生成人體骨架生成圖\n'
+                    '\n'
+                    '再丟到InceptionV4裡面提取特徵\n'
+                    '\n'
+                    '最後再送進去神經網路做學習與驗證\n'
+                    '\n'
+                    '這樣與\n'
+                    '\n'
+                    '資料集圖片直接丟如InceptionV4提取特徵再送進去神經網路裡面 的差別在哪邊？\n'
+                    '\n'
+                    '因為我很納悶，假設有經過openpose的比較好，那深度學習模型要如何去學習投手骨架的\n'
+                    '變化，還是應該是也是一直給他定義說 這個是什麼球種這樣？！\n'
+                    '\n'
+                    '\n',
+ 'article_date': 'Sun Feb 14 19:03:56 2021',
+ 'article_id': 'M.1613300638.A.731',
+ 'article_title': '[問題] 新手openpose與深度學習問題',
+ 'ip': '27.247.197.86',
+ 'message_count': 22,
+ 'messages': ' 就差在一個NN可以直接看到骨架噪音較少啊=====分隔線===== '
+             '這裡的骨架變化相當於一種球種特徵，原來NN要自己找重點，=====分隔線===== '
+             '妳現在幫他找好了，剩下該怎做，就怎做啊=====分隔線===== '
+             '不好意思，有實證說球種跟手臂角度變化的關係嗎？=====分隔線===== '
+             '要做分類要給label。影片截圖之後有上下文關係，incep=====分隔線===== '
+             'tionV4可能不是好選擇？=====分隔線===== 如果沒記錯的話，球種跟手指握球的方式比較有關。=====分隔線===== '
+             '手臂位置多少會有關係，不過也有投手很刻意想辦法把不同球=====分隔線===== '
+             '種練到手臂位置差不多，增加打者分辨的難度=====分隔線===== '
+             '事實上就打者的角度，想要更早一點看出球路，就是想盡辦法=====分隔線===== '
+             '從手臂、手掌、出手點甚至到準備動作微小習慣差異去判斷=====分隔線===== '
+             '而投手也會想辦法掩飾修正這些差異=====分隔線===== '
+             '所以就這問題來說，我們應該是一球一球給它正確的球種答案=====分隔線===== '
+             '，期待學習出來的模型能夠找得出不同球種間的差異而能分辨=====分隔線===== '
+             '我們不應該先行猜想手臂到底跟球種有沒有關聯性，而是讓模=====分隔線===== '
+             '型去找找看關聯性存不存在=====分隔線===== '
+             '另外，這些關聯性高機率每個投手都不一樣，當然你要嘗試找=====分隔線===== '
+             '所有投手會不會也多少有什麼共通性也是可以嘗試，但就背景=====分隔線===== '
+             '知識來看可能相對不容易找出有意義結論，先以單一投手個別=====分隔線===== '
+             '建立模型可能比較有機會=====分隔線===== openpose的license有禁止體育應用 '
+             '小心被告=====分隔線===== 沒實際用過，居然有這事啊XD',
+ 'url': 'https://www.ptt.cc/bbs/DataScience/M.1613300638.A.731.html'}
+2021-03-03 22:41:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ptt.cc/bbs/DataScience/M.1613621707.A.C0C.html>
 {'article_author': 'peter308 (pete)',
  'article_content': '\n'
                     '※ 引述《peter308 (pete)》之銘言：\n'
@@ -241,148 +372,23 @@ The code that caused this warning is on line 56 of the file C:\Users\User\Deskto
              '都沒有，甚至連同一群的instances要彼此相似這種限制都不=====分隔線===== 存在=====分隔線===== '
              '所謂分群的好壞也沒有絕對性，是依據後續應用而定',
  'url': 'https://www.ptt.cc/bbs/DataScience/M.1613621707.A.C0C.html'}
-2021-03-03 22:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ptt.cc/bbs/DataScience/M.1613300638.A.731.html>
-{'article_author': 'kuku951 (猴子)',
- 'article_content': '\n'
-                    '各位板上大大好\n'
-                    '\n'
-                    '小弟最近在思考一個問題\n'
-                    '\n'
-                    '廢話不多說直接來\n'
-                    '\n'
-                    '我要判斷投手投球的球種是什麼\n'
-                    '\n'
-                    '理應還說投出每種球種時\n'
-                    '\n'
-                    '人體的骨架Ex: 手臂出手的角度會不同\n'
-                    '\n'
-                    '然後\n'
-                    '\n'
-                    '如果資料集影片切割成圖片後用\n'
-                    '\n'
-                    'openpose生成人體骨架生成圖\n'
-                    '\n'
-                    '再丟到InceptionV4裡面提取特徵\n'
-                    '\n'
-                    '最後再送進去神經網路做學習與驗證\n'
-                    '\n'
-                    '這樣與\n'
-                    '\n'
-                    '資料集圖片直接丟如InceptionV4提取特徵再送進去神經網路裡面 的差別在哪邊？\n'
-                    '\n'
-                    '因為我很納悶，假設有經過openpose的比較好，那深度學習模型要如何去學習投手骨架的\n'
-                    '變化，還是應該是也是一直給他定義說 這個是什麼球種這樣？！\n'
-                    '\n'
-                    '\n',
- 'article_date': 'Sun Feb 14 19:03:56 2021',
- 'article_id': 'M.1613300638.A.731',
- 'article_title': '[問題] 新手openpose與深度學習問題',
- 'ip': '27.247.197.86',
- 'message_count': 22,
- 'messages': ' 就差在一個NN可以直接看到骨架噪音較少啊=====分隔線===== '
-             '這裡的骨架變化相當於一種球種特徵，原來NN要自己找重點，=====分隔線===== '
-             '妳現在幫他找好了，剩下該怎做，就怎做啊=====分隔線===== '
-             '不好意思，有實證說球種跟手臂角度變化的關係嗎？=====分隔線===== '
-             '要做分類要給label。影片截圖之後有上下文關係，incep=====分隔線===== '
-             'tionV4可能不是好選擇？=====分隔線===== 如果沒記錯的話，球種跟手指握球的方式比較有關。=====分隔線===== '
-             '手臂位置多少會有關係，不過也有投手很刻意想辦法把不同球=====分隔線===== '
-             '種練到手臂位置差不多，增加打者分辨的難度=====分隔線===== '
-             '事實上就打者的角度，想要更早一點看出球路，就是想盡辦法=====分隔線===== '
-             '從手臂、手掌、出手點甚至到準備動作微小習慣差異去判斷=====分隔線===== '
-             '而投手也會想辦法掩飾修正這些差異=====分隔線===== '
-             '所以就這問題來說，我們應該是一球一球給它正確的球種答案=====分隔線===== '
-             '，期待學習出來的模型能夠找得出不同球種間的差異而能分辨=====分隔線===== '
-             '我們不應該先行猜想手臂到底跟球種有沒有關聯性，而是讓模=====分隔線===== '
-             '型去找找看關聯性存不存在=====分隔線===== '
-             '另外，這些關聯性高機率每個投手都不一樣，當然你要嘗試找=====分隔線===== '
-             '所有投手會不會也多少有什麼共通性也是可以嘗試，但就背景=====分隔線===== '
-             '知識來看可能相對不容易找出有意義結論，先以單一投手個別=====分隔線===== '
-             '建立模型可能比較有機會=====分隔線===== openpose的license有禁止體育應用 '
-             '小心被告=====分隔線===== 沒實際用過，居然有這事啊XD',
- 'url': 'https://www.ptt.cc/bbs/DataScience/M.1613300638.A.731.html'}
-2021-03-03 22:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ptt.cc/bbs/DataScience/M.1614079009.A.215.html>
-{'article_author': 'Sheepforpart (Sheep)',
- 'article_content': '\n'
-                    '作業系統: Google colab/ Mac\n'
-                    '\n'
-                    '問題類別: DL\n'
-                    '\n'
-                    '使用工具: Tensorflow 2.x\n'
-                    '\n'
-                    '問題內容:\n'
-                    '\n'
-                    '想請教一個實作 Tensorflow data pipeline 的問題，我已經研究了好幾天\n'
-                    '但還是沒找到一個好方法\n'
-                    '\n'
-                    '模型的功能是預測一張圖片上哪些地方比較吸引人眼注意\n'
-                    '\n'
-                    '但麻煩的是原始資料全都是影片，而且除了影片外，我們還要加入聲音來訓練\n'
-                    '\n'
-                    '整體流程大約是這樣：\n'
-                    '\n'
-                    '1. 從影片中抽取幾張 frame\n'
-                    '2. 從影片中抽取對應的 audio, 並且做成 spectrogram\n'
-                    '3. 上一個步驟中的 audio 也保留 wave\n'
-                    '\n'
-                    '\n'
-                    '我目前查資料看起來 TFRecord 的功能好像很強，只是真的很複雜，不知道怎麼做到\n'
-                    '上面的那些轉換\n'
-                    '\n'
-                    '另外有一個不是很理想的方法是，先把需要的 frames 和 audio 都先抽好存起來\n'
-                    '如果是這個方法的話，我就只需要知道 Tensorflow 要如何同時餵進來自兩個來源\n'
-                    '的資料，這邊的重點可能是 shuffle 之後次序依然要維持對應\n'
-                    '\n'
-                    '這個方法不太理想是因為在實驗完之後，真正使用的資料集非常大，沒辦法先抽好\n'
-                    '\n'
-                    '麻煩大家給我一些建議了，謝謝',
- 'article_date': 'Tue Feb 23 19:16:43 2021',
- 'article_id': 'M.1614079009.A.215',
- 'article_title': '[問題] Tensorflow data pipeline 問題',
- 'ip': '109.57.194.138',
- 'message_count': 4,
- 'messages': ' 設定兩個Input layer, 再用concatenate layer=====分隔線===== '
-             '不熟TFRecord沒法給什麼建議，不過應該只要處理好=====分隔線===== '
-             '影片frame和audio的對應，spectrogram可以online從=====分隔線===== audio轉換而來',
- 'url': 'https://www.ptt.cc/bbs/DataScience/M.1614079009.A.215.html'}
-2021-03-03 22:23:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.ptt.cc/bbs/DataScience/M.1613921489.A.E25.html>
-{'article_author': 'loser113 (洨大魯蛇ㄍ)',
- 'article_content': '\n'
-                    '作業系統:(ex:mac,win10,win8,win7,linux,etc...)\n'
-                    '\n'
-                    '問題類別:(ex：ML,SVM,RL,DL,RNN,CNN,NLP,BD,Vis,etc...)\n'
-                    '\n'
-                    '使用工具: spark kafka hbase\n'
-                    '\n'
-                    '問題內容:\n'
-                    '\n'
-                    '最近需要開發資料串流\n'
-                    '\n'
-                    '想求的 spark 相關書籍 最好有寫道 有關 kafka  串流方法\n'
-                    '\n'
-                    '除了歐萊禮 有沒有其他推薦 希望不要太舊版',
- 'article_date': 'Sun Feb 21 23:31:27 2021',
- 'article_id': 'M.1613921489.A.E25',
- 'article_title': '[問題] spark 開發求書',
- 'ip': '...',
- 'message_count': 1,
- 'messages': ' use flink',
- 'url': 'https://www.ptt.cc/bbs/DataScience/M.1613921489.A.E25.html'}
-2021-03-03 22:23:23 [scrapy.core.engine] INFO: Closing spider (finished)
-2021-03-03 22:23:23 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+2021-03-03 22:41:36 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-03-03 22:41:36 [scrapy.extensions.feedexport] INFO: Stored json feed (5 items) in: ./output/ptt.json
+2021-03-03 22:41:36 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
 {'downloader/request_bytes': 3371,
  'downloader/request_count': 7,
  'downloader/request_method_count/GET': 7,
- 'downloader/response_bytes': 20918,
+ 'downloader/response_bytes': 21102,
  'downloader/response_count': 7,
  'downloader/response_status_count/200': 6,
  'downloader/response_status_count/404': 1,
- 'elapsed_time_seconds': 2.281595,
+ 'elapsed_time_seconds': 1.591631,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2021, 3, 3, 14, 23, 23, 305363),
+ 'finish_time': datetime.datetime(2021, 3, 3, 14, 41, 36, 531035),
  'item_scraped_count': 5,
  'log_count/DEBUG': 18,
- 'log_count/INFO': 10,
- 'log_count/WARNING': 2,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 3,
  'request_depth_max': 1,
  'response_received_count': 7,
  'robotstxt/request_count': 1,
@@ -392,5 +398,5 @@ The code that caused this warning is on line 56 of the file C:\Users\User\Deskto
  'scheduler/dequeued/memory': 6,
  'scheduler/enqueued': 6,
  'scheduler/enqueued/memory': 6,
- 'start_time': datetime.datetime(2021, 3, 3, 14, 23, 21, 23768)}
-2021-03-03 22:23:23 [scrapy.core.engine] INFO: Spider closed (finished)
+ 'start_time': datetime.datetime(2021, 3, 3, 14, 41, 34, 939404)}
+2021-03-03 22:41:36 [scrapy.core.engine] INFO: Spider closed (finished)

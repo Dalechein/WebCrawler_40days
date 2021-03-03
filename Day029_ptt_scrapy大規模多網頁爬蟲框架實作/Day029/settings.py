@@ -17,6 +17,10 @@ NEWSPIDER_MODULE = 'Day029.spiders'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
+FEED_FORMAT = 'json'
+FEED_EXPORT_ENCODING = 'utf-8'
+FEED_URI = './output/ptt.json'
+
 LOG_FILE = './output/ptt.log'
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
