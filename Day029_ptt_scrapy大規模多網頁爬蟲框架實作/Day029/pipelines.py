@@ -11,10 +11,10 @@ import sqlite3
 
 class Day029Pipeline:
     def open_spider(self, spider):
-        self.conn = sqlite3.connect ("ptt.db") 
+        self.conn = sqlite3.connect ("DS_ptt.db") 
         self.cur = self.conn.cursor()
         
-        sql = '''Create table ptt(  
+        sql = '''Create table DataScience_ptt(  
                 article_id TEXT,
                 article_title TEXT,
                 article_author TEXT,
@@ -40,6 +40,6 @@ class Day029Pipeline:
         date = item['article_date']
         url = item['url']
         x = (article_id, article_title, article_author, date, article_content, ip, messages, message_count, url)
-        sql = '''insert into fastfood_ptt values(?,?,?,?,?,?,?,?,?)'''  
+        sql = '''insert into DataScience_ptt values(?,?,?,?,?,?,?,?,?)'''  
         self.conn.execute(sql,x)
         return item
