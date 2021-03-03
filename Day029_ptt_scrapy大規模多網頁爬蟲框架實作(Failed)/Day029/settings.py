@@ -65,11 +65,6 @@ ITEM_PIPELINES = {
     'Day029.pipelines.Day029Pipeline': 300,
 }
 
-#ITEM_PIPELINES = {
-#    'myproject.pipelines.MyprojectPipeline': 300,
-#    'myproject.pipelines.JSONPipeline': 10
-#}
-
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
